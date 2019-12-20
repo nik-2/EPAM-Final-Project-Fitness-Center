@@ -1,0 +1,76 @@
+input, button{
+    outline: 0;
+}
+
+.image{
+    background-image: url("../../image/profile.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div.scroll-table {
+    position: relative;
+    left: 15%;
+    width: 70%;
+    overflow: auto;
+    height: 70%;
+    border: 1px solid black;
+    background-color: white;
+    opacity: 0.9;
+}
+
+h2{
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+}
+
+#myInput {
+    background-image: url("../../image/searchicon.png");
+    background-size: 30px 30px;
+    background-position: 5px 10px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid black;
+    margin-bottom: 12px;
+    opacity: 0.9;
+    position: relative;
+    left: 15%;
+    width: 70%;
+}
+
+#myTable {
+    border-collapse: inherit;
+    font-size: 18px;
+    white-space: nowrap
+}
+
+#myTable th, #myTable td {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid black;
+}
+
+#myTable tr {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black ;
+    background-color: white;
+    opacity: 0.9;
+}
+
+#myTable tr.header{
+    border-top: none;
+}
+
+#myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f1;
+    opacity: 0.9;
+}

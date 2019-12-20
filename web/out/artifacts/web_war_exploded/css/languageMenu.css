@@ -1,0 +1,61 @@
+input, button{
+    outline: 0;
+}
+#language{
+    height: 60px;
+    width: 100px;
+    position: fixed;
+    right: -100px;
+    bottom: 22px;
+    background: #555;
+    -moz-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+}
+
+#language.active {
+    right: 0;
+    z-index: 100;
+}
+
+#language ul{
+    padding: 0 10px 0 10px;
+}
+
+#language ul li{
+    width: 100%;
+    font-size: 13.4px;
+    list-style: none;
+}
+
+#language ul li form input{
+    background: #555;
+    text-align: center;
+    color: #dfe5eb;
+    font-size: 13.4px;
+    border: 0;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#language ul li form input:hover {color: #59e9df}
+
+.icon-bar {
+    border-right: 1px solid white;
+    position: absolute;
+    bottom: 0;
+    margin-left: -60px;
+    background-color: #555;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 40px;
+}
+
+.icon-bar:hover {
+    background-color: #000;
+}

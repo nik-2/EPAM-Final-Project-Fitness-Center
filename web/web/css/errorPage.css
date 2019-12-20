@@ -1,0 +1,31 @@
+.background{
+    background-image: url("../image/error.gif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+}
+
+.errorText{
+    top: 3%;
+    left: 3%;
+    color: #cd161d;
+}
+
+#btn{
+    text-align: center;
+    bottom: 10%;
+}
+
+#btn a{
+    padding: 10px 10px;
+    color: white;
+    background: #75eb70;
+    text-decoration: none;
+    border: #75eb70;
+}
+
+#btn a:hover { color:white;
+    background: #5d56eb;
+    text-decoration: none;
+    border: #5d56eb;}

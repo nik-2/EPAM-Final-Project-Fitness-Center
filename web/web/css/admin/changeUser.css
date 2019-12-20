@@ -1,0 +1,113 @@
+input, button{
+    outline: 0;
+}
+
+.modalConfirm {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
+}
+.checkMark{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #9160eb;
+    text-decoration: none;
+    font-size: 1.3em;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: 0;
+}
+
+.checkMark:hover{
+    color: red;
+}
+
+.modalConfirm input{
+    position: absolute;
+    bottom: 5%;
+    outline: 0;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0;
+    padding: 2px;
+    background-color: #bfe1ea;
+    color:  #666;
+    font-family: 'Bad Script', cursive;
+    font-weight: bolder;
+    cursor: pointer;
+    width: auto;
+    opacity: 1;
+}
+
+.modalConfirm button{
+    position: absolute;
+    bottom: 5%;
+    outline: 0;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0;
+    padding: 0 20px;
+    font-family: 'Bad Script', cursive;
+    font-weight: bolder;
+    cursor: pointer;
+    width: auto;
+    opacity: 1;
+}
+
+.cancelbtn{
+    width: auto;
+    padding: 0 20px;
+    background-color: #f44336;
+    color: #fafafa;
+    left: 15%;
+}
+
+.confirmbtn{
+    width: auto;
+    padding: 0 20px;
+    background-color: #bfe1ea;
+    color:  #666;
+    right: 16%;
+}
+
+.cancelbtn:hover{
+    background-color: #8EFE57;
+    color:  #666;
+}
+
+.confirmbtn:hover{
+    background-color:  #556270;
+    color:  #fafafa;
+}
+
+.change{
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black ;
+    background-color: #f1f1f1;
+    opacity: 0.9;
+}
+
+.checkMarkChange{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: red;
+    text-decoration: none;
+    font-size: 1.3em;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: 0;
+}

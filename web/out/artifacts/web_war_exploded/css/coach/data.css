@@ -1,0 +1,275 @@
+input, button{
+    outline: 0;
+}
+
+h2{
+    font-size: 50px;
+    color: #0b09ca;
+    text-align: center;
+    top: 3%;
+}
+
+.dataContent{
+    position: relative;
+    left: 15%;
+    top: 8%;
+    height: auto;
+    width: 70%;
+    border-radius: 30px;
+    white-space: nowrap;
+    border: 1px solid black;
+}
+
+.dataContentInput{
+    position: relative;
+    font-weight: bolder;
+    color: #a10062;
+    padding: 3px;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    margin: 10px 50% 10px 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    background: transparent;
+    outline: 0;
+}
+
+.inp{
+    display:  flex;
+}
+
+.dataContent b{
+    font-size: 20px;
+    position: relative;
+    padding: 13px 30px 10px;
+}
+
+.editPassword{
+    position: absolute;
+    padding: 0;
+    font-size: 15px;
+    left: 70%;
+    top:28%;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    z-index: 20;
+}
+
+.editData{
+    position: absolute;
+    padding: 0;
+    font-size: 15px;
+    left: 70%;
+    top:23%;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    z-index: 20;
+}
+
+.edit{
+    font-size: 9px;
+}
+
+.change{
+    position: relative;
+    font-weight: bolder;
+    color: #6f35a1;
+    padding: 3px;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    margin: 10px 50% 10px 0;
+    display: inline-block;
+    background: transparent;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+input[type=text]:invalid,input[type=password]:invalid {
+    border: 1px solid red;
+}
+
+input[type=text]:valid,input[type=password]:valid {
+    border: 1px solid black;
+}
+
+.errorText{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+    color: #900;
+    text-align: center;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    position: absolute;
+    top: 26%;
+    left: 70%;
+    background-color: #f44336;
+    color: #fafafa;
+}
+
+.cancelbtn:hover {
+    background-color: #8EFE57;
+    color:  #666;
+}
+
+.confirmbtn{
+    position: absolute;
+    top: 26%;
+    left: 75%;
+    background-color: #bfe1ea;
+    color:  #666;
+}
+
+.confirmbtn:hover{
+    background-color:  #556270;
+    color:  #fafafa;
+}
+
+#responseBtn{
+    display: none;
+}
+
+.responseBtn button{
+    font-size: 10px;
+    border-radius: 10px;
+    border: 0;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 0 20px;
+    opacity: 1;
+    z-index: 20;
+    outline: 0;
+}
+
+.containerChangePassword input[type=password]{
+    border-radius: 15px;
+    width: 50%;
+    padding-left: 10px;
+    margin: 0 auto;
+    display: inline-block;
+    outline: 0;
+    border: none;
+    background: white;
+}
+
+.containerChangePassword input[type=password]:invalid {
+    border: 1px solid red;
+}
+
+.containerChangePassword input[type=password]:valid {
+    border: 1px solid black;
+}
+
+#textChangePassword{
+    text-align: center;
+    font-size: 18px;
+    color: #900;
+}
+
+.containerChangePassword {
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: #d9b8fe;
+    padding: 16px;
+}
+
+.changePassword {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    position: fixed;
+    top: 8%;
+    left: 35%;
+    border-radius: 30px;
+    background-color: #D5D5D5;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.closeConfirm {
+    position: absolute;
+    right: 34%;
+    top: 10%;
+    color: #750d79;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.closeConfirm:hover,
+.closeConfirm:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.confirmChangeBtn{
+    position: relative;
+    bottom: 20px;
+    font-size: 13px;
+    border-radius: 10px;
+    border: 0;
+    padding: 0 25px;
+    background-color: #bfe1ea;
+    color:  #666;
+    font-weight: bolder;
+    cursor: pointer;
+    width: auto;
+    opacity: 1;
+}
+
+.confirmChangeBtn:hover {
+    background-color:  #556270;
+    color:  #fafafa;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}

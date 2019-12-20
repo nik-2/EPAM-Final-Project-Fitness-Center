@@ -1,0 +1,83 @@
+input, button{
+    outline: 0;
+}
+
+.background {
+    background-color: silver;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+}
+
+#info.activeInfo {
+    left: 350px;
+}
+
+#info ul li:not(:first-child):before {
+    content: '\2713';
+    display: inline-block;
+    color: red;
+    padding: 0 6px 0 0;
+}
+
+#info ul {
+    margin: 3% 3% 3% 3%;
+}
+
+#info ul li {
+    color: #b178fa;
+    font-size: 15px;
+    width: 90%;
+    list-style: none;
+}
+
+#info ul li:not(:first-child) {
+    margin-top: 1%;
+}
+
+#info {
+    border-radius: 15px;
+    border: 4px solid #E0E5EA;
+    background: #57626F;
+    position: fixed;
+    left: 100px;
+    top: 14%;
+    width: 35%;
+    -moz-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+}
+
+#headline {
+    position: fixed;
+    left: 48%;
+    font-size: 30px;
+    top: 4%;
+    color: #57626F;
+    font-weight: 900;
+}
+
+#image1 {
+    border: 4px solid #E0E5EA;
+    position: absolute;
+    right: 1%;
+    border-radius: 20px;
+    top: 18%;
+    height: 67%;
+    width: 35%;
+}
+
+.parameter {
+    border: 4px solid #E0E5EA;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    right: 1%;
+    border-radius: 20px;
+    top: 18%;
+    height: 67%;
+    width: 35%;
+}
+
+

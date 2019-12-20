@@ -1,0 +1,42 @@
+input, button{
+    outline: 0;
+}
+
+.image{
+    background-image: url("../image/schedule.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+}
+
+#schedule{
+    border-radius: 15px;
+    position: fixed;
+    left: 65%;
+    height: 50%;
+    width: 20%;
+    top: 20%;
+    background: #222222;
+    opacity: 0.65;
+}
+
+#schedule ul li:first-child{
+    list-style: none;
+    padding: 5% 10px 10px 10px;
+    font-size: 30px;
+    color: #fafafa;
+    opacity: 1;
+    text-align: center;
+}
+
+#schedule ul li:not(:first-child){
+    opacity: 1;
+    color: #fafafa;
+    font-size: 21px;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 10%;
+    list-style: none;
+    padding: 10px 10px;
+}

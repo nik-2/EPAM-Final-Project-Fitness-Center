@@ -1,0 +1,44 @@
+input, button{
+    outline: 0;
+}
+
+.image{
+    background-image: url("../image/contact.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+}
+
+#contact{
+    border-radius: 15px;
+    position: absolute;
+    left: 35%;
+    height: 35%;
+    width: 32%;
+    top: 5%;
+    background: #222222;
+    opacity: 0.65;
+}
+
+#contact ul li{
+    position: static;
+    opacity: 1;
+    color: #00fa92;
+    font-size: 15px;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 8%;
+    list-style: none;
+    padding: 10px 10px;
+}
+
+#contact ul li a{
+    margin-left: 3%;
+    opacity: 1;
+    color: #f1ff8d;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {color: #9a58e9
+}

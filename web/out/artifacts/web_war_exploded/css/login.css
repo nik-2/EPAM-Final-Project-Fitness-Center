@@ -1,0 +1,155 @@
+input, button{
+    outline: 0;
+}
+
+/* Full-width input fields */
+.containerSignIn input[type=text], .containerSignIn input[type=password] {
+    border-radius: 15px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtnSignIn {
+    width: auto;
+    padding: 0 20px;
+    background-color: #f44336;
+    color: #fafafa;
+}
+
+#textLogin{
+    font-size: 18px;
+    color: #900;
+}
+
+.cancelbtnSignIn:hover{
+    background-color: #8EFE57;
+    color:  #666;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.containerSignInBtn{
+    border-top: 1px solid black;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color:#D5D5D5;
+    padding: 16px;
+}
+
+.containerSignIn {
+    border-top: 1px solid black;
+    background-color: #fefefe;
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modalSignIn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-contentSignIn {
+    border-radius: 30px;
+    background-color: #D5D5D5;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.closeSignIn {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.closeSignIn:hover,
+.closeSignIn:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+#log{
+    position: absolute;
+    right: 10px;
+    top: 60px;
+}
+
+#log button{
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0;
+    padding: 2px;
+    background-color: #bfe1ea;
+    color:  #666;
+    font-family: 'Bad Script', cursive;
+    font-weight: bolder;
+    cursor: pointer;
+    width: auto;
+    opacity: 1;
+}
+
+#log button:hover {
+    background-color:  #556270;
+    color:  #fafafa;
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+        .cancelbtnSignIn {
+        width: 100%;
+    }
+}

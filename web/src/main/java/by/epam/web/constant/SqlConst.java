@@ -1,0 +1,42 @@
+package by.epam.web.constant;
+
+public class SqlConst {
+    public final static String ADD_USER_SQL = "INSERT INTO users (MAIL, NAME, SURNAME, PASSWORD, DATE_REGISTRATION, CONFIRM_CODE) VALUES(?, ?, ?, ?, ?, ?);";
+    public final static String FIND_USER_BY_MAIL_SQL = "SELECT * FROM users WHERE MAIL=?;";
+    public final static String FIND_USER_CLUB_BALANCE_BY_MAIL_SQL = "SELECT CLUB_BALANCE FROM users WHERE MAIL=?;";
+    public final static String FIND_USER_CARD_BALANCE_BY_MAIL_SQL = "SELECT CARD_BALANCE FROM users WHERE MAIL=?;";
+    public final static String FIND_BALANCE_BY_CLUB = "SELECT BALANCE FROM fitness_club WHERE MAIL=?;";
+    public final static String UPDATE_USER_CLUB_AND_CARD_BALANCE_BY_MAIL_SQL = "UPDATE users SET CLUB_BALANCE=?, CARD_BALANCE=? WHERE MAIL=?;";
+    public final static String UPDATE_BALANCE_BY_CLUB = "UPDATE fitness_club SET BALANCE=? WHERE MAIL=?;";
+    public final static String FIND_COACHES = "SELECT * FROM users WHERE ROLE='COACH';";
+    public final static String FIND_NUMBER_DAY_REG = "SELECT DATEDIFF(NOW(), ?);";
+    public final static String FIND_ALL_USER = "SELECT * FROM users;";
+    public final static String FIND_ALL_USER_WITHOUT_ME = "SELECT * FROM users WHERE MAIL!=?;";
+    public final static String FIND_ALL_BLOCK_USER = "SELECT * FROM users WHERE BLOCK=true;";
+    public final static String FIND_ALL_CHANGE_COACH = "SELECT relationship.COACH_MAIL FROM relationship JOIN users ON users.MAIL = relationship.COACH_MAIL WHERE users.ROLE != 'COACH';";
+    public final static String UPDATE_CHANGE_COACH = "UPDATE relationship SET COACH_MAIL=default WHERE COACH_MAIL=?";
+    public final static String FIND_ALL_UNBLOCK_USER_WITHOUT_ME = "SELECT * FROM users WHERE BLOCK=false AND MAIL!=?;";
+    public final static String DELETE_UNCONFIRMED_USER = "DELETE FROM users WHERE STATUS='UNCONFIRMED' AND DATE_REGISTRATION < DATE_SUB(NOW(), INTERVAL 5 MINUTE);";
+    public final static String SELECT_END_SUBSCRIPTION_USER = "SELECT relationship.CLIENT_MAIL FROM relationship JOIN users ON users.MAIL = relationship.CLIENT_MAIL WHERE users.SUBSCRIPTION_DATE_END < NOW();";
+    public final static String DELETE_END_SUBSCRIPTION = "DELETE FROM relationship WHERE CLIENT_MAIL=?;";
+    public final static String UPDATE_USER_END_SUBSCRIPTION = "UPDATE users SET SUBSCRIPTION=default, SUBSCRIPTION_DATE_END=default WHERE SUBSCRIPTION_DATE_END < NOW();";
+    public final static String UPDATE_UNCONFIRMED_USER = "UPDATE users SET STATUS='CONFIRMED' WHERE MAIL=?;";
+    public final static String UPDATE_BLOCK_USER = "UPDATE users SET BLOCK=true WHERE MAIL=?;";
+    public final static String UPDATE_UNBLOCK_USER = "UPDATE users SET BLOCK=false WHERE MAIL=?;";
+    public final static String UPDATE_ROLE_USER = "UPDATE users SET ROLE=? WHERE MAIL=?;";
+    public final static String UPDATE_USER_PASSWORD = "UPDATE users SET PASSWORD=? WHERE MAIL=?;";
+    public final static String UPDATE_USER_DATA = "UPDATE users SET NAME=?, SURNAME=?, BANK_CARD_ID=? WHERE MAIL=?;";
+    public final static String FIND_CLIENT_COACH_BY_MAIL_SQL = "SELECT COACH_MAIL FROM relationship WHERE CLIENT_MAIL=?;";
+    public final static String UPDATE_USER_SUBSCRIPTION = "UPDATE users SET SUBSCRIPTION=?, SUBSCRIPTION_DATE_END=DATE_ADD(NOW(), INTERVAL ? MONTH), CLUB_BALANCE=? WHERE MAIL=?;";
+    public final static String INSERT_CLIENT_COACH = "INSERT INTO relationship (CLIENT_MAIL, COACH_MAIL) VALUES(?, ?);";
+    public final static String INSERT_CLIENT_DIET = "INSERT INTO diets (CLIENT_MAIL, NOMINATION) VALUES(?, default);";
+    public final static String INSERT_CLIENT_EXERCISE = "INSERT INTO exercises (CLIENT_MAIL, NOMINATION) VALUES(?, default);";
+    public final static String UPDATE_USER_COACH = "UPDATE relationship SET COACH_MAIL=? WHERE CLIENT_MAIL=?;";
+    public final static String UPDATE_USER_DIET = "UPDATE diets SET NOMINATION=? WHERE CLIENT_MAIL=?;";
+    public final static String UPDATE_USER_EXERCISE = "UPDATE exercises SET NOMINATION=? WHERE CLIENT_MAIL=?;";
+    public final static String FIND_USER_DIET = "SELECT NOMINATION FROM diets WHERE CLIENT_MAIL=?";
+    public final static String FIND_USER_EXERCISE = "SELECT NOMINATION FROM exercises WHERE CLIENT_MAIL=?";
+    public final static String SELECT_COACH_CLIENT = "SELECT * FROM users JOIN relationship ON users.MAIL = relationship.CLIENT_MAIL WHERE relationship.COACH_MAIL=?;";
+    public final static String SELECT_NOMINATION_DIET = "SELECT NOMINATION FROM diets WHERE CLIENT_MAIL=?;";
+    public final static String SELECT_NOMINATION_EXERCISE = "SELECT NOMINATION FROM exercises WHERE CLIENT_MAIL=?;";
+}

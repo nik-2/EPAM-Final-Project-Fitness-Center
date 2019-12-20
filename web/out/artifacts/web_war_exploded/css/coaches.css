@@ -1,0 +1,350 @@
+input, button{
+    outline: 0;
+}
+
+.background {
+    background-color: silver;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+}
+body {
+    margin: 50px;
+}
+.btn-arrow-left {
+    box-sizing: content-box;
+    border: 2px solid white;
+    display: inline-block;
+    padding: 10px;
+    width: 15px;
+    position: absolute;
+    background: #FFBCBC;
+    left: 10%;
+    bottom: 5%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+    -moz-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+}
+.btn-arrow-left:after,
+.btn-arrow-left:before {
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    content:'';
+    position: absolute;
+    left: -15px;
+    top: 65%;
+    background: #FFBCBC;
+    width: 20px;
+    height: 20px;
+    margin-top: -14px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+    z-index: -1;
+    transform: rotate(45deg);
+}
+.btn-arrow-left:before {
+    z-index: 1;
+    box-shadow: none;
+}
+.btn-arrow-left:hover,
+.btn-arrow-left:hover:after,
+.btn-arrow-left:hover:before {
+    background: #00FFB0;
+}
+.btn-arrow-right {
+    box-sizing: content-box;
+    border: 2px solid white;
+    display: inline-block;
+    padding: 10px;
+    width: 15px;
+    position: absolute;
+    background: #FFBCBC;
+    right: 10%;
+    bottom: 5%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+    -moz-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+}
+.btn-arrow-right:after,
+.btn-arrow-right:before {
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    content:'';
+    position: absolute;
+    left: 30px;
+    top: 65%;
+    background: #FFBCBC;
+    width: 20px;
+    height: 20px;
+    margin-top: -14px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+    z-index: -1;
+    transform: rotate(45deg);
+}
+.btn-arrow-right:before {
+    z-index: 1;
+    box-shadow: none;
+}
+.btn-arrow-right:hover,
+.btn-arrow-right:hover:after,
+.btn-arrow-right:hover:before {
+    background: #00FFB0;
+}
+
+#btn-left.activeBtn{
+    left: 50%;
+}
+
+#coach1 ul li:first-child{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#coach1 ul {
+    padding: 10px 10px 10px 10px;
+    margin: 3% 3% 3% 3%;
+}
+
+#coach1 ul li {
+    color: #FFFAD3;
+    font-size: 15px;
+    width: 100%;
+    list-style: none;
+}
+
+#coach1 {
+    opacity: 1;
+    border-radius: 15px;
+    border: 4px solid #E0E5EA;
+    background: #57626F;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    width: 35%;
+}
+
+#coach2 ul li:first-child{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#coach2 ul {
+    padding: 10px 10px 10px 10px;
+    margin: 3% 3% 3% 3%;
+}
+
+#coach2 ul li {
+    color: #FFFAD3;
+    font-size: 15px;
+    width: 100%;
+    list-style: none;
+}
+
+#coach2 {
+    opacity: 0;
+    border-radius: 15px;
+    border: 4px solid #E0E5EA;
+    background: #57626F;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    width: 35%;
+}
+
+#coach3 ul li:first-child{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#coach3 ul {
+    padding: 10px 10px 10px 10px;
+    margin: 3% 3% 3% 3%;
+}
+
+#coach3 ul li {
+    color: #FFFAD3;
+    font-size: 15px;
+    width: 100%;
+    list-style: none;
+}
+
+#coach3 {
+    opacity: 0;
+    border-radius: 15px;
+    border: 4px solid #E0E5EA;
+    background: #57626F;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    width: 35%;
+}
+
+#coach4 ul li:first-child{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#coach4 ul {
+    padding: 10px 10px 10px 10px;
+    margin: 3% 3% 3% 3%;
+}
+
+#coach4 ul li {
+    color: #FFFAD3;
+    font-size: 15px;
+    width: 100%;
+    list-style: none;
+}
+
+#coach4 {
+    opacity: 0;
+    border-radius: 15px;
+    border: 4px solid #E0E5EA;
+    background: #57626F;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    width: 35%;
+}
+
+#coach5 ul li:first-child{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#coach5 ul {
+    padding: 10px 10px 10px 10px;
+    margin: 3% 3% 3% 3%;
+}
+
+#coach5 ul li {
+    color: #FFFAD3;
+    font-size: 15px;
+    width: 100%;
+    list-style: none;
+}
+
+#coach5 {
+    opacity: 0;
+    border-radius: 15px;
+    border: 4px solid #E0E5EA;
+    background: #57626F;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    width: 35%;
+}
+
+#coach6 ul li:first-child{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#coach6 ul {
+    padding: 10px 10px 10px 10px;
+    margin: 3% 3% 3% 3%;
+}
+
+#coach6 ul li {
+    color: #FFFAD3;
+    font-size: 15px;
+    width: 100%;
+    list-style: none;
+}
+
+#coach6 {
+    opacity: 0;
+    border-radius: 15px;
+    border: 4px solid #E0E5EA;
+    background: #57626F;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    width: 35%;
+}
+
+#image1 {
+    border: 4px solid #E0E5EA;
+    opacity: 1;
+    position: absolute;
+    right: 10%;
+    border-radius: 20px;
+    top: 10%;
+    height: 75%;
+    width: 40%;
+}
+
+#image2 {
+    opacity: 0;
+    border: 4px solid #E0E5EA;
+    position: absolute;
+    right: 10%;
+    border-radius: 20px;
+    top: 10%;
+    height: 75%;
+    width: 40%;
+}
+
+#image3 {
+    opacity: 0;
+    border: 4px solid #E0E5EA;
+    position: absolute;
+    right: 10%;
+    border-radius: 20px;
+    top: 10%;
+    height: 75%;
+    width: 40%;
+}
+
+#image4 {
+    opacity: 0;
+    border: 4px solid #E0E5EA;
+    position: absolute;
+    right: 10%;
+    border-radius: 20px;
+    top: 10%;
+    height: 75%;
+    width: 40%;
+}
+
+#image5 {
+    opacity: 0;
+    border: 4px solid #E0E5EA;
+    position: absolute;
+    right: 10%;
+    border-radius: 20px;
+    top: 10%;
+    height: 75%;
+    width: 40%;
+}
+
+#image6 {
+    opacity: 0;
+    border: 4px solid #E0E5EA;
+    position: absolute;
+    right: 10%;
+    border-radius: 20px;
+    top: 10%;
+    height: 75%;
+    width: 40%;
+}

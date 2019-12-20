@@ -1,0 +1,52 @@
+input, button{
+    outline: 0;
+}
+
+.appreciateText{
+    position: relative;
+    text-align: center;
+    color: #5866a5;
+    font-size: 40px;
+    top: 15%;
+}
+
+.image{
+    background-image: url("../../image/profile.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+}
+
+h1{
+    position: relative;
+    font-size: 100px;
+    color: #5866a5;
+    text-align: center;
+    top: 20%;
+}
+
+#logout{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+#logout button{
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0;
+    padding: 2px;
+    background-color: #bfe1ea;
+    color:  #666;
+    font-family: 'Bad Script', cursive;
+    font-weight: bolder;
+    cursor: pointer;
+    width: auto;
+    opacity: 1;
+}
+
+#logout button:hover {
+    background-color:  #556270;
+    color:  #fafafa;
+}
