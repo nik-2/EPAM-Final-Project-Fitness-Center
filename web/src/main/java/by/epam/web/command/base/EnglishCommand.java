@@ -7,6 +7,9 @@ import org.apache.logging.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * The type English command.
+ */
 public class EnglishCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(EnglishCommand.class);
 

@@ -18,6 +18,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.ReentrantLock;
 
 
+/**
+ * The type Connection pool.
+ */
 public class ConnectionPool {
     private static final Logger logger = LogManager.getLogger(ConnectionPool.class);
     private static ConnectionPool instance;
@@ -29,6 +32,12 @@ public class ConnectionPool {
     private ConnectionPool() {
     }
 
+    /**
+     * Gets instance.
+     *
+     * @return the instance
+     * @throws ConnectionPoolException the connection pool exception
+     */
     public static ConnectionPool getInstance() throws ConnectionPoolException {
         if (!instanceCreated.get()) {
             lock.lock();
@@ -113,6 +122,12 @@ public class ConnectionPool {
         }
     }
 
+    /**
+     * Gets connection.
+     *
+     * @return the connection
+     * @throws ConnectionPoolException the connection pool exception
+     */
     public ProxyConnection getConnection() throws ConnectionPoolException {
         ProxyConnection proxyConnection;
         try {
@@ -125,6 +140,11 @@ public class ConnectionPool {
         return proxyConnection;
     }
 
+    /**
+     * Destroy connections.
+     *
+     * @throws ConnectionPoolException the connection pool exception
+     */
     public static void destroyConnections() throws ConnectionPoolException {
         for (int index = 0; index < poolSize; index++) {
             ProxyConnection proxyConnection = null;
@@ -166,6 +186,12 @@ public class ConnectionPool {
         return super.clone();
     }
 
+    /**
+     * Release connection.
+     *
+     * @param proxyConnection the proxy connection
+     * @throws ConnectionPoolException the connection pool exception
+     */
     void releaseConnection(ProxyConnection proxyConnection) throws ConnectionPoolException {
         try {
             logger.debug("Put connection on the connection queue");

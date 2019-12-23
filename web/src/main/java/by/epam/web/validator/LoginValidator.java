@@ -2,7 +2,17 @@ package by.epam.web.validator;
 
 import by.epam.web.constant.PatternConst;
 
+/**
+ * The type Login validator.
+ */
 public class LoginValidator {
+    /**
+     * Validate login boolean.
+     *
+     * @param enterMail the enter mail
+     * @param enterPass the enter pass
+     * @return the boolean
+     */
     public static boolean validateLogin(String enterMail, String enterPass) {
         return validateMail(enterMail) && validatePassword(enterPass);
     }

@@ -17,6 +17,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
+/**
+ * The type Block command.
+ */
 public class BlockCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(BlockCommand.class);
 

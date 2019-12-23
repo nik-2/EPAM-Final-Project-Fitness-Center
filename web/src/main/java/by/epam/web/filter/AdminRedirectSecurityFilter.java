@@ -13,6 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * The type Admin redirect security filter.
+ */
 @WebFilter(urlPatterns = {"/jsp/admin/*"})
 public class AdminRedirectSecurityFilter implements Filter {
     private static final Logger logger = LogManager.getLogger(AdminRedirectSecurityFilter.class);

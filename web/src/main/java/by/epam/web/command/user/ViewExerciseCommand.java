@@ -15,6 +15,9 @@ import org.apache.logging.log4j.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+/**
+ * The type View exercise command.
+ */
 public class ViewExerciseCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(ViewExerciseCommand.class);
     private DataBaseUserDao dataBaseUserDao = DaoFactory.getInstance().getUserDao();

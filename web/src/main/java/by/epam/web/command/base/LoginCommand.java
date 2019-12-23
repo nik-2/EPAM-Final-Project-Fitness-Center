@@ -20,6 +20,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
+/**
+ * The type Login command.
+ */
 public class LoginCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(LoginCommand.class);
 

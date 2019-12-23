@@ -15,6 +15,9 @@ import org.apache.logging.log4j.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+/**
+ * The type View data command.
+ */
 public class ViewDataCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(ViewDataCommand.class);
 

@@ -12,12 +12,20 @@ import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 import java.io.IOException;
 
+/**
+ * The type Info day reg.
+ */
 public class InfoDayReg extends SimpleTagSupport {
     private static final Logger logger = LogManager.getLogger(InfoDayReg.class);
 
     private DataBaseUserDao dataBaseUserDao = DaoFactory.getInstance().getUserDao();
     private String name;
 
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
     public void setName(String name) {
         this.name = name;
     }

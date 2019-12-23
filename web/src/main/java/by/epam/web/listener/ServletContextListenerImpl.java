@@ -13,6 +13,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * The type Servlet context listener.
+ */
 @WebListener
 public class ServletContextListenerImpl implements ServletContextListener {
     private static final Logger logger = LogManager.getLogger(ServletContextListenerImpl.class);

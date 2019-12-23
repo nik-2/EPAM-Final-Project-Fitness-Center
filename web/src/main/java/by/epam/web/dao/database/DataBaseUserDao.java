@@ -21,6 +21,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Data base user dao.
+ */
 public class DataBaseUserDao extends AbstractUserDao {
     private static final Logger logger = LogManager.getLogger(DataBaseUserDao.class);
 

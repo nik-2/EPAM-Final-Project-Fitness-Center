@@ -17,6 +17,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
+/**
+ * The type Unblock command.
+ */
 public class UnblockCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(UnblockCommand.class);
 

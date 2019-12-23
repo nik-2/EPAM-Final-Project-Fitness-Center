@@ -15,6 +15,9 @@ import org.apache.logging.log4j.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+/**
+ * The type View diet command.
+ */
 public class ViewDietCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(ViewDietCommand.class);
     private DataBaseUserDao dataBaseUserDao = DaoFactory.getInstance().getUserDao();

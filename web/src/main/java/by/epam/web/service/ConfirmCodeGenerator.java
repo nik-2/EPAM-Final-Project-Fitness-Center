@@ -5,9 +5,17 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Random;
 
+/**
+ * The type Confirm code generator.
+ */
 public class ConfirmCodeGenerator {
     private static final Logger logger = LogManager.getLogger(ConfirmCodeGenerator.class);
 
+    /**
+     * Generate string string.
+     *
+     * @return the string
+     */
     public static String generateString() {
         logger.debug("Start generate code");
         int length = 4;

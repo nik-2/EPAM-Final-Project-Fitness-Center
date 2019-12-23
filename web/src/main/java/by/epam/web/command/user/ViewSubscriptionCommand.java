@@ -17,6 +17,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
+/**
+ * The type View subscription command.
+ */
 public class ViewSubscriptionCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(ViewSubscriptionCommand.class);
     private DataBaseUserDao dataBaseUserDao = DaoFactory.getInstance().getUserDao();

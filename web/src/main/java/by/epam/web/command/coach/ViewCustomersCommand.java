@@ -17,6 +17,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
+/**
+ * The type View customers command.
+ */
 public class ViewCustomersCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(ViewCustomersCommand.class);
 

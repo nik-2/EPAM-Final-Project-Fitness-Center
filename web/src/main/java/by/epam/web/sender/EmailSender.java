@@ -13,9 +13,19 @@ import javax.mail.internet.MimeMessage;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * The type Email sender.
+ */
 public class EmailSender {
     private static final Logger logger = LogManager.getLogger(EmailSender.class);
 
+    /**
+     * Send mail.
+     *
+     * @param to     the to
+     * @param text   the text
+     * @param header the header
+     */
     public static void sendMail(String to, String text, String header) {
         final Properties properties = new Properties();
         try {

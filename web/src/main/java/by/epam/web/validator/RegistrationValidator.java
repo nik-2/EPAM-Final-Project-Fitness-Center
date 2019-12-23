@@ -2,7 +2,20 @@ package by.epam.web.validator;
 
 import by.epam.web.constant.PatternConst;
 
+/**
+ * The type Registration validator.
+ */
 public class RegistrationValidator {
+    /**
+     * Validate registration boolean.
+     *
+     * @param enterMail       the enter mail
+     * @param enterPass       the enter pass
+     * @param enterRepeatPass the enter repeat pass
+     * @param enterName       the enter name
+     * @param enterSurname    the enter surname
+     * @return the boolean
+     */
     public static boolean validateRegistration(String enterMail, String enterPass, String enterRepeatPass, String enterName, String enterSurname) {
         return validateMail(enterMail) && validateName(enterName) && validateSurname(enterSurname) && validatePassword( enterPass) && validateRepeatPassword( enterRepeatPass);
     }

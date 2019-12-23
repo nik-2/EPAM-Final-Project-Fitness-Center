@@ -21,6 +21,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
 
+/**
+ * The type Change subscription coach command.
+ */
 public class ChangeSubscriptionCoachCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(ChangeSubscriptionCoachCommand.class);
     private DataBaseUserDao dataBaseUserDao = DaoFactory.getInstance().getUserDao();

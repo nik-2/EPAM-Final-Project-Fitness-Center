@@ -12,6 +12,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * The type Transfer logic.
+ */
 public class TransferLogic {
     private static final Logger logger = LogManager.getLogger(TransferLogic.class);
 
@@ -19,6 +22,11 @@ public class TransferLogic {
     private ProxyConnection connectionFrom = null;
     private static TransferLogic instance = null;
 
+    /**
+     * Gets instance.
+     *
+     * @return the instance
+     */
     public synchronized static TransferLogic getInstance() {
         if (instance == null) {
             logger.info("Create transfer logic instance");
@@ -55,6 +63,17 @@ public class TransferLogic {
         return connectionTo;
     }
 
+    /**
+     * Change subscription boolean.
+     *
+     * @param newSubscription the new subscription
+     * @param cost            the cost
+     * @param duration        the duration
+     * @param clientMail      the client mail
+     * @param coachMail       the coach mail
+     * @return the boolean
+     * @throws SQLException the sql exception
+     */
     public boolean changeSubscription(String newSubscription, String cost, String duration, String clientMail, String coachMail) throws SQLException {
         logger.debug("Start change subscription in the transfer logic");
         boolean check;
@@ -98,6 +117,14 @@ public class TransferLogic {
         return check;
     }
 
+    /**
+     * Transfer boolean.
+     *
+     * @param summa the summa
+     * @param mail  the mail
+     * @return the boolean
+     * @throws SQLException the sql exception
+     */
     public boolean transfer(String summa, String mail) throws SQLException {
         logger.debug("Start transfer in the transfer logic");
         boolean check;

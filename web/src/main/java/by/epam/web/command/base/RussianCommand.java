@@ -7,6 +7,9 @@ import org.apache.logging.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * The type Russian command.
+ */
 public class RussianCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(RussianCommand.class);
 

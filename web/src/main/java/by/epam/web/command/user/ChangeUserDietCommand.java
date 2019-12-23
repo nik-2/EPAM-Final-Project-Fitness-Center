@@ -19,6 +19,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
+/**
+ * The type Change user diet command.
+ */
 public class ChangeUserDietCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(ChangeUserDietCommand.class);
 

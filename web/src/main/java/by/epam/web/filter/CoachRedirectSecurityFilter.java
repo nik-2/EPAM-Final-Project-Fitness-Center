@@ -13,6 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * The type Coach redirect security filter.
+ */
 @WebFilter(urlPatterns = {"/jsp/coach/*"})
 public class CoachRedirectSecurityFilter implements Filter {
     private static final Logger logger = LogManager.getLogger(CoachRedirectSecurityFilter.class);

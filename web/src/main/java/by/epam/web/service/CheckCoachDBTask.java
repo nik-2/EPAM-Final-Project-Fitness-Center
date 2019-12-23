@@ -11,6 +11,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * The type Check coach db task.
+ */
 public class CheckCoachDBTask implements Runnable{
     private static final Logger logger = LogManager.getLogger(CheckCoachDBTask.class);
 

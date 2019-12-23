@@ -13,6 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * The type User redirect security filter.
+ */
 @WebFilter(urlPatterns = {"/jsp/user/*"})
 public class UserRedirectSecurityFilter implements Filter {
     private static final Logger logger = LogManager.getLogger(UserRedirectSecurityFilter.class);

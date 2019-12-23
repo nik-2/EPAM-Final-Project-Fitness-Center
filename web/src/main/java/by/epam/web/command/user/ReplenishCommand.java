@@ -21,6 +21,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
 
+/**
+ * The type Replenish command.
+ */
 public class ReplenishCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(ReplenishCommand.class);
     private DataBaseUserDao dataBaseUserDao = DaoFactory.getInstance().getUserDao();

@@ -11,6 +11,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * The type Subscription db task.
+ */
 public class SubscriptionDBTask implements Runnable {
     private static final Logger logger = LogManager.getLogger(SubscriptionDBTask.class);
 

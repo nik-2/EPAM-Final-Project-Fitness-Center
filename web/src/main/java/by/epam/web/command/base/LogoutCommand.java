@@ -8,6 +8,9 @@ import org.apache.logging.log4j.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+/**
+ * The type Logout command.
+ */
 public class LogoutCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(LogoutCommand.class);
 

@@ -8,9 +8,18 @@ import org.apache.logging.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * The type Action factory.
+ */
 public class ActionFactory {
     private static final Logger logger = LogManager.getLogger(ActionFactory.class);
 
+    /**
+     * Define command action command.
+     *
+     * @param request the request
+     * @return the action command
+     */
     public ActionCommand defineCommand(HttpServletRequest request) {
         logger.debug("Start action command");
         ActionCommand current = null;

@@ -17,6 +17,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
+/**
+ * The type Change user command.
+ */
 public class ChangeUserCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(ChangeUserCommand.class);
 

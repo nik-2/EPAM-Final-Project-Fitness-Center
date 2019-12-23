@@ -10,6 +10,9 @@ import org.apache.logging.log4j.Logger;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+/**
+ * The type Clean db task.
+ */
 public class CleanDBTask implements Runnable {
     private static final Logger logger = LogManager.getLogger(CleanDBTask.class);
 

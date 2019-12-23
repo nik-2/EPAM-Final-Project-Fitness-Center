@@ -2,7 +2,18 @@ package by.epam.web.validator;
 
 import by.epam.web.constant.PatternConst;
 
+/**
+ * The type Change user data validator.
+ */
 public class ChangeUserDataValidator {
+    /**
+     * Validate data boolean.
+     *
+     * @param enterName     the enter name
+     * @param enterSurname  the enter surname
+     * @param enterBankCard the enter bank card
+     * @return the boolean
+     */
     public static boolean validateData(String enterName, String enterSurname, String enterBankCard) {
         return validateName(enterName) && validateSurname(enterSurname) && validateBankCard(enterBankCard);
     }

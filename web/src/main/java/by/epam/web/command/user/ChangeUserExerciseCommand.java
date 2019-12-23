@@ -19,6 +19,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
+/**
+ * The type Change user exercise command.
+ */
 public class ChangeUserExerciseCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(ChangeUserExerciseCommand.class);
 
